@@ -963,12 +963,24 @@ section {
         .card-header {
             color: $white;
             background-color: $navy-blue;
-            max-height: 112.6px;
+            max-height: 124.6px;
             border-bottom: 0;
+
+            &.fixed-height {
+                height: 124.6px;
+            }
 
             h5 {
                 font-size: 20px;
                 font-weight: 900;
+
+                @media screen and (min-width: 992px) {
+                    font-size: 16px;
+                }
+
+                @media screen and (min-width: 1200px) {
+                    font-size: 20px;
+                }
             }
 
             h6 {
@@ -976,7 +988,7 @@ section {
                 font-weight: 900;
 
                 &::after {
-                    content: 'pln*';
+                    content: 'PLN*';
                     font-size: 18px;
                     margin-left: 5px;
                 }
@@ -989,12 +1001,18 @@ section {
                 text-align: left;
                 margin-bottom: .2rem;
             }
+
+            span {
+                display: block;
+                text-align: right;
+                font-size: 12px;
+            }
         }
 
         .card-body {
             font-size: 14px;
             font-weight: 400;
-            padding-bottom: 0;
+            padding-bottom: 0;  
 
             &.empty {
                 padding: 0;
