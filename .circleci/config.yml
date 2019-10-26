@@ -5,6 +5,7 @@ jobs:
                         - image: mihcall/devconf-middleman:1.0.2
                 steps:
                         - checkout
+                        - run: bundle install
                         - run: bundle exec middleman build --verbose
                         - run: bundle exec middleman s3_sync
                         - run: bundle exec middleman cdn
