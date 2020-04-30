@@ -9,11 +9,17 @@
         <div class="main-display">
             <div class="title">
                 <div class="main-display-title">DevConf</div>
-                <div class="main-display-title alternate">2020</div>
+                <div class="main-display-title alternate"><s style="font-size: 60%; color: lightgray;">2020</s>2021</div>
                 <div class="subtitle">The Software Craftsmen Festival for Sharing Knowledge and Inspiration</div>
             </div>            
             <div class="important-info">
-                <div>
+                <p style="color: white;">
+                    <strong>DevConf 2020 is postponed.</strong> We are very sorry, 
+                    but due to the pandemic, we have decided to postpone DevConf 
+                    to the year 2021. We believe that health and safety are most 
+                    important right now.
+                </p>
+                <!--<div>
                     <i class="fas fa-graduation-cap"></i>
                     <%= workshops_date.strftime("%d %b %Y") %> - Workshops
                 </div>
@@ -24,16 +30,16 @@
                 <div>
                     <i class="fas fa-map-marker-alt"></i>
                     Kraków, Poland
-                </div>
+                </div>-->
             </div>
-            <div class="cta row no-gutters">
+            <!--<div class="cta row no-gutters">
                 <div class="col-sm-6 text-center">
                     <a class="btn btn-primary nav-btn" href="/#tickets" role="button">Get Tickets</a>
                 </div>
                 <div class="col-sm-6 text-center">
                     <a class="btn btn-primary" href="<%= data.general.cfp_link %>" role="button">Apply to Speak!</a>
                 </div>
-            </div>
+            </div>-->
             <%= partial "social_links" %>
         </div>
     </div>
